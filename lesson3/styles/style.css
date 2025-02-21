@@ -1,0 +1,11 @@
+* {
+    color: #333333;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+p span {
+  text-decoration: underline blue;
+  cursor: pointer;
+}
+dt{
+    text-decoration: underline;
+}

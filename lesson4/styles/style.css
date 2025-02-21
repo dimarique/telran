@@ -1,0 +1,13 @@
+.one,
+.two,
+.three {
+	border: 1px solid #333333;
+}
+
+.two {
+	width: 500px;
+}
+
+.three {
+	width: 50%;
+}

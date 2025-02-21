@@ -1,0 +1,14 @@
+.block {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    background-color: #c1e0f6;
+
+    height: 200px;
+}
+.item {
+    width: 30px;
+    aspect-ratio: 1/1;
+    background-color: #fff;
+    border: 1px solid #000000;
+}
