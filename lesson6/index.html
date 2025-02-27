@@ -4,11 +4,102 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Lesson6</title>
+	<link rel="stylesheet" href="./styles/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+		rel="stylesheet">
+	<title>Form</title>
 </head>
 
 <body>
-	<h1>Lesson 6</h1>
+	<div class="content_wrapper">
+		<h1>Form</h1>
+		<form action="">
+			<div class="header">
+				<p>Tour Booking Form</p>
+			</div>
+			<div class="userName">
+				<p>Name</p>
+				<input type="text" name="fName" placeholder="First name">
+				<input type="text" name="lName" placeholder="Last name">
+			</div>
+			<div class="userEmail">
+				<p>Email</p>
+				<input type="email" name="email" placeholder="inbox@gmail.com">
+			</div>
+			<div class="userPhone">
+				<p>Phone</p>
+				<input type="tel" name="phone" placeholder="#############">
+			</div>
+			<div class="startDate">
+				<p>When are you planning to vizit?</p>
+				<input type="date" name="startDate" placeholder="">
+			</div>
+			<div class="groupSize">
+				<p>How many people are in your group?</p>
+				<input type="number" min="0" name="groupSize">
+			</div>
+			<div class="tourSelect">
+				<p>Which tour are you most interested in?</p>
+				<select name="tourSelect">
+					<option selected value="none">*Please select*</option>
+					<option value="maldives">Sunny Escape to the Maldives</option>
+					<option value="europe">Grand European Adventure Tour</option>
+					<option value="bali">Tropical Paradise in Bali</option>
+					<option value="kenya">Wild Safari Experience in Kenya</option>
+					<option value="iceland">Iceland's Northern Lights Journey</option>
+					<option value="alps">Majestic Alps Ski Getaway</option>
+					<option value="scotland">Historic Castles of Scotland Tour</option>
+					<option value="venice">Romantic Venice and Rome Escape</option>
+				</select>
+			</div>
+			<div class="contactSelect">
+				<p>What is the best way to contact you?</p>
+
+				<label for="contact-method-email">
+					<input type="checkbox" name="contact-method-email" id="contact-method-email" value="email">
+					Email
+				</label>
+
+				<label for="contact-method-phone">
+					<input type="checkbox" name="contact-method-phone" id="contact-method-phone" value="phone">
+					Phone
+				</label>
+
+				<label for="contact-method-either">
+					<input type="checkbox" name="contact-method-either" id="contact-method-either" value="either">
+					Either
+				</label>
+
+			</div>
+			<div class="contactTime">
+				<p>If phone, when is the best time of day for a call-back?</p>
+
+				<label for="contact-morning">
+					<input type="radio" name="contact-time" id="contact-morning" value="morning">
+					8 - 11 AM
+				</label>
+
+				<label for="contact-afternoon">
+					<input type="radio" name="contact-time" id="contact-afternoon" value="afternoon">
+					12 - 4 PM
+				</label>
+
+				<label for="contact-evening">
+					<input type="radio" name="contact-time" id="contact-evening" value="evening">
+					8 - 10 PM
+				</label>
+			</div>
+			<div class="moreQuestions">
+				<p>Anything else we should know?</p>
+				<textarea></textarea>
+			</div>
+			<button type="submit">Send</button>
+	</div>
+	</form>
+	</div>
 </body>
 
 </html>
