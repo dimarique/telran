@@ -1,0 +1,7 @@
+.content p:last-child {
+	color: blue
+}
+
+.content p:nth-child(1) {
+	color: blue;
+}

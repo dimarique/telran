@@ -84,31 +84,34 @@ nav {
 	width: 60px;
 	aspect-ratio: 1/1;
 
-	border: 1px solid #333333;
+	border: 1px solid (from hsl(0, 0%, 20%) h s 60%);
 	border-radius: 5px;
 	box-shadow: 2px 2px 10px 0px #333333;
 
 	background-color: hsla(193, 80%, 75%, 0.5);
 	backdrop-filter: blur(10px);
+
+	&:hover {
+
+		cursor: pointer;
+		box-shadow: 5px 5px 20px 0px #333333;
+	}
 }
 
-.totop:hover {
-	cursor: pointer;
-	box-shadow: 5px 5px 20px 0px #333333;
-
-}
 
 p {
 	padding: 10px 80px;
-}
 
-p:first-letter {
-	font-size: 3em;
-	float: left;
-	line-height: 1;
-	margin-right: 5px;
-}
+	&::first-letter {
 
-p:nth-of-type(2n) {
-	background-color: #eaeaea;
+		font-size: 3em;
+		float: left;
+		line-height: 1;
+		margin-right: 5px;
+	}
+
+	&:nth-of-type(2n) {
+
+		background-color: #eaeaea;
+	}
 }
